@@ -24,6 +24,8 @@ const services = [
   }
 ];
 
+const base = "/phu-olek-wpage/"
+
 const galleryImages = [
   "/images/tshirt1.jpg",
   "/images/cup1.jpg",
@@ -36,27 +38,27 @@ const galleryImages = [
 const partners = [
   {
     name: "Blum",
-    logo: "/logos/blum.svg"
+    logo: "logos/blum.svg"
   },
   {
     name: "Ikea",
-    logo: "/logos/ikea.svg"
+    logo: "logos/ikea.svg"
   },
   {
     name: "Algida",
-    logo: "/logos/algida.svg"
+    logo: "logos/algida.svg"
   },
   {
     name: "Bic",
-    logo: "/logos/bic.svg"
+    logo: "logos/bic.svg"
   },
   {
     name: "Coca-Cola",
-    logo: "/logos/coca-cola.svg"
+    logo: "logos/coca-cola.svg"
   },
   {
     name: "Axpol",
-    logo: "/logos/axpol.png"
+    logo: "logos/axpol.png"
   }
 ];
 
@@ -150,7 +152,7 @@ export default function HomePage() {
                   >
                     <div className="w-30 h-30 flex items-center justify-center bg-white rounded-md p-2">
                       <img
-                        src={partner.logo}
+                        src={base + partner.logo}
                         alt={partner.name}
                         className="max-h-full max-w-full object-contain"
                       />
